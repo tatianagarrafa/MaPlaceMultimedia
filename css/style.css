@@ -1,0 +1,346 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+@font-face{
+	font-family: paper_johnny;
+	src:url('font/PaperJohnnyZwei-Regular.otf');
+}
+
+@font-face{
+	font-family: paper_johnny;
+	src:url('font/paperjohnnyzwei-regular-webfont.eot');
+}
+
+body {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 14px;
+	background-image: url('../images/bg_body.gif');
+	background-repeat: repeat-y;
+}
+
+#globale{
+	max-width: 960px;
+	margin: 0 auto;
+	background-image: url('../images/bg_globale.gif');
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+/*-------------HEADER-------------*/
+header #menuPrincipal{
+	margin-left: 235px;
+	position: absolute;
+	top: 70px;
+	background-image: url('../images/bg_nav.gif');
+	background-repeat: repeat-x;
+	font-size: 18px;
+	font-family: paper_johnny,Verdana,Geneva,sans-serif;
+}
+
+header #menuPrincipal ul{
+	list-style: none;
+	margin-left: -53px;
+	margin-top: 30px;
+}
+
+header #menuPrincipal ul li {
+	display: inline;
+	padding-left: 60px;
+	margin-right: 13px;
+}
+
+header #menuPrincipal ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 1.4em;
+	width: 250px;
+	background: url('../images/menu_interac.png') 0px 0px no-repeat;
+	padding: 5px;
+}
+
+header #menuPrincipal ul li a:hover{
+	background: url('../images/menu_interac.png') -200px 0px no-repeat;
+	color: #FFF;
+}
+
+header #menuPrincipal ul li a:active, 
+header #menuPrincipal ul li a#pageCourante{
+	background: url('../images/menu_interac.png') -400px 0px no-repeat;
+	color: #FFF;
+}
+
+/*-------------CONTENANT-------------*/
+#contenu{
+	margin: 10px;
+	margin-top: -10px;
+}
+
+/*-------------SECTION-------------*/
+section{
+	max-width: 85%;
+}
+
+section h1{
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+section h1:first-letter{
+	font-size: 2.5em;
+	color: #ffb708;
+	font-weight: bold;
+}
+
+section h1 .letreBlue{
+	color: #2a24bf;
+}
+
+section h1 .letreRouge{
+	color: #bf1304;
+}
+
+section h1 .letreVerte{
+	color: #3bb230;
+}
+
+.savoirPlus{
+	display: inline-block;
+	width: 225px;
+	height: 355px;
+	margin-top: 30px;
+	margin-left: 10px;
+	border: 2px solid #2a24bf;
+	border-radius: 1em;
+	padding: 5px;
+	float: left;
+}
+
+.savoirPlus h2,
+aside #pub h2{
+	font-size: 1.5em;
+	font-family: paper_johnny,Verdana,Geneva,sans-serif;
+	color: #ffb708;
+	text-align: center;
+}
+
+.savoirPlus img{
+	width: 190px;
+	height: 180px;
+	border: 1px solid #bf1304;
+	border-radius: 1em;
+	padding: 5px;
+	margin-top: 40px;
+	margin-left: 8px;
+}
+
+.savoirPlus p{
+	margin-left: 8px;
+}
+
+.savoirPlus h5{
+	font-size: 0.7em;
+	float: right;
+	margin: 10px;
+}
+
+.savoirPlus a{
+	text-decoration: none;
+	color: #2a24bf;
+}
+
+/*-------------ASIDE-------------*/
+aside{
+	max-width: 15%;	
+	text-align: justify;
+	float: right;
+	margin-right: 30px;
+	padding-right: 5px;
+}
+
+aside #pub{
+	padding-top: 20px;
+}
+
+aside #pub h2{
+	text-align: left;
+	margin-bottom: 20px;
+	font-size:  1.3em;
+}
+
+aside #pub  a{
+	text-decoration: none;
+	color: #ffb708;
+}
+
+/*-------------FOOTER------------*/
+footer{
+	clear: left;
+	max-width: 100%;
+	bottom: -300px;
+	font-size: 0.8em;
+	padding: 20px;
+	background-image: url('../images/bg_footer.gif');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	margin-right: 50px;
+}
+
+footer h2{
+	font-size: 1.5em;
+	font-family: paper_johnny,Verdana,Geneva,sans-serif;
+	color: #ffb708;
+	margin-bottom: 15px;
+}
+
+footer #links ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+footer em{
+	font-weight: bold;
+	border: 1px solid #ffb708;
+	border-radius: 7px;
+	padding: 5px;
+}
+
+footer .linkFooter{
+	list-style: none;
+	float: left;
+	padding: 5px;
+}
+
+footer  .linkFooter li{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+footer #reseauSociaux li{
+	display: inline;
+}
+
+footer #reseauSociaux,
+footer #newsletter,
+footer #contactMe{
+	float: left;
+}
+
+footer #reseauSociaux{
+	margin: 0px 20px;
+}
+
+footer  #newsletter input, 
+footer  #contactMe h2{
+	margin-bottom: 10px;
+}
+
+footer  #contactMe{
+	margin-left: 10px;
+}
+
+footer #newsletter .bouttons {
+	display: inline-block;
+	width: 70px;
+	font-size: 1.3em;
+	font-family: paper_johnny,Verdana,Geneva,sans-serif;
+}
+
+input[type=submit],
+input[type=reset]{
+    background: #ffb708;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+    background: #ffb708;
+	border: 2px solid #3bb230;
+}
+
+footer img {
+	width: 25px;
+	height: 25px;
+	
+}
+
+footer  #contactMe h3{
+	margin: 4px 0px;
+}
+
+footer #developpePar{
+	font-variant: small-caps;
+	font-size: 0.9em;
+	color: #2a24bf;
+	font-weight: bold;
+	letter-spacing: 3px;
+	clear: left;
+	margin-bottom: 15px;
+}
+
+footer #contactMe a{
+	text-decoration: none;
+	color: black;
+}
+
+footer #contactMe a:hover{
+	text-decoration: underline;
+}
+
+/*-------------INSPIRATIONS.HTML------------*/
+#sctInspiration,
+#sctPropos{
+	max-width: 100%;
+}
+
+#sctInspiration h1,
+#sctPropos h1{
+	margin-left: 10px;
+}
+
+#sctInspiration h2{
+	color: #2a24bf;
+}
+
+#sctInspiration .savoirPlus{
+	border-color: #bf1304;
+	margin-top: 70px;
+	width: 280px;
+	height: 400px;
+}
+
+
+#sctInspiration #article2{
+	visibility: hidden;
+}
+
+
+#sctInspiration .savoirPlus img{
+	margin: 30px 0px 50px 40px;
+	border-color: #3bb230;
+}
+
+#sctInspiration p,
+#sctPropos p{
+	position: relative;
+	top: 20px;
+	left: 90px;
+	font-size: 1.3em;
+	font-variant: small-caps;
+}
+
+/*-------------A PROPOS.HTML------------*/
+#sctPropos h2{
+	color: #bf1304;
+}
+
+#sctPropos .savoirPlus{
+	border-color: #3bb230;
+	margin-top: 70px;
+	width: 280px;
+	height: 400px;
+}
+
+#sctPropos .savoirPlus img{
+	margin: 30px 0px 50px 40px;
+}
